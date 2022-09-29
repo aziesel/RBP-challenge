@@ -1,0 +1,34 @@
+
+R version 4.0.5 (2021-03-31) -- "Shake and Throw"
+Copyright (C) 2021 The R Foundation for Statistical Computing
+Platform: x86_64-pc-linux-gnu (64-bit)
+
+R is free software and comes with ABSOLUTELY NO WARRANTY.
+You are welcome to redistribute it under certain conditions.
+Type 'license()' or 'licence()' for distribution details.
+
+R is a collaborative project with many contributors.
+Type 'contributors()' for more information and
+'citation()' on how to cite R or R packages in publications.
+
+Type 'demo()' for some demos, 'help()' for on-line help, or
+'help.start()' for an HTML browser interface to help.
+Type 'q()' to quit R.
+
+> ### R CMD BATCH "--args fa=\"$fasta\" pwm=\"$pwm\" " preRNAfold.R
+> ##### This script takes in $fasta file and $pwm file and mainly invokes moreSeqsFeature() to calculate MS and CS scores.
+> ##### OUTPUT: a feature matrix consisting of 20 columns (ftMat) and a position matrix consisting of 10 major columns (posMat).
+> options(echo=F)
+fa="../temp/our_protein.fasta" 
+pwm="../../lib/M357_0.6.pwm.txt" 
+bitMS.r
+clusteringScore.r
+matchScore.r
+moreSeqsFeature.r
+oneSeqFeature_top.r
+readFaList.r
+Read 15 items
+Error in grep(substr(kMer, i, i), colnames(pwm)) : 
+  invalid regular expression '[', reason 'Missing ']''
+Calls: moreSeqsFeature -> oneSeqFeature_top -> bitMS -> matchScore -> grep
+Execution halted

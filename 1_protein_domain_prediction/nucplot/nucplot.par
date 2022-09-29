@@ -1,0 +1,107 @@
+NUCPLOT v.1.0  -  Parameter file (nucplot.par)
+----------------------------------------------
+
+PRINT OPTIONS
+-------------
+Y     <- Produce a colour PostScript file (Y/N)?
+P     <- Orientation of plot: (P)ortrait or (L)andscape?
+Y     <- Plot title - (Y/N)?
+Y     <- Show key to plot - (Y/N)?
+Y     <- Output filename = "nucplot.ps" - (Y/N)? (see Note 1 below)
+
+Note 1 - The default outpout filename is nucplot.ps. The alternative format
+         of the filename is pdbname_X.ps where pdbname is the name of the
+	 input PDB file, and X is the chain-ID of the first DNA chain on
+	 the plot.
+
+PLOT PARAMETERS
+---------------
+N    <- Read bonding information from .bond file (Y/N)?
+Y    <- Include protein residue H-bonds - (Y/N)?
+Y    <- Include non-bridging water H-bonds - (Y/N)?
+Y    <- Include bridging water H-bonds - (Y/N)?
+Y    <- Include non-bonded contacts - (Y/N)?
+N    <- Use one-letter amino acid codes for protein residue names - (Y/N)?
+Y    <- Residues only, rather than all atoms, for non-bonded contacts - (Y/N)?
+
+NUMERICAL PARAMETERS
+--------------------
+10   <- Number of base pairs on each page
+3.00 <- Distance cut off for Hydrogen bonds
+3.35 <- Distance cut off for non-bonded contacts
+
+
+COLOUR PARAMETERS (Colour definitions are given below)
+-----------------
+CREAM             <- Background colour of page
+BLACK             <- Residue names and numbers
+BLACK             <- Text
+DARK BLUE         <- Hydrogen bonds
+BRICK RED         <- Non-bonded contacts
+RED               <- Adenine base
+ORANGE            <- Cytosine base
+BLUE              <- Thymine base
+GREEN             <- Guanine base
+CYAN              <- Uracil base
+BROWN             <- Sugar ring
+WHITE             <- Inside sugar
+PURPLE            <- Phosphate groups
+WHITE             <- Inside phosphate
+BLACK             <- DNA backbone (1st chain)
+BLACK             <- DNA backbone (2nd chain)
+BLACK             <- DNA backbone (3rd chain)
+BLACK             <- DNA backbone (4th chain)
+BLACK             <- Base-to-base and continuation lines
+BLUE              <- Nitrogen atoms
+RED               <- Oxygen atoms
+BLACK             <- Carbon atoms
+YELLOW            <- Sulphur atoms
+TURQUOISE         <- Water molecules
+WHITE             <- Inside water
+GREEN             <- Unknown atoms
+
+
+COLOUR DEFINITIONS
+------------------
+0.0000 0.0000 0.0000 'BLACK          '<- Colour 1
+1.0000 1.0000 1.0000 'WHITE          '<- Colour 2
+1.0000 0.0000 0.0000 'RED            '<- Colour 3
+0.0000 0.8000 0.2000 'GREEN          '<- Colour 4
+0.4000 0.4000 1.0000 'BLUE           '<- Colour 5
+1.0000 1.0000 0.0000 'YELLOW         '<- Colour 6
+0.8000 0.5000 0.0000 'ORANGE         '<- Colour 7
+0.5000 1.0000 0.0000 'LIME GREEN     '<- Colour 8
+0.4000 0.0000 0.7000 'PURPLE         '<- Colour 9
+0.5000 1.0000 1.0000 'CYAN           '<- Colour 10
+1.0000 0.5000 1.0000 'PINK           '<- Colour 11
+0.3000 0.8000 1.0000 'SKY BLUE       '<- Colour 12
+1.0000 1.0000 0.7000 'CREAM          '<- Colour 13
+0.0000 1.0000 1.0000 'TURQUOISE      '<- Colour 14
+1.0000 0.0000 1.0000 'LILAC          '<- Colour 15
+0.8000 0.0000 0.0000 'BRICK RED      '<- Colour 16
+0.5000 0.0000 0.0000 'BROWN          '<- Colour 17
+0.9700 0.9700 0.9700 'LIGHT GREY     '<- Colour 18
+0.1000 0.5000 0.0000 'OLIVE GREEN    '<- Colour 19
+0.0000 0.0000 1.0000 'DARK BLUE      '<- Colour 20
+
+
+NON-STANDARD BASES
+------------------
+APR
+CAR
+TCP
+TSP
+1MA
+5MC
+OMC
+1MG
+2MG
+M2G
+7MG
+OMG
+ YG
+H2U
+5MU
+PSU
+MTE
+5IU

@@ -6,6 +6,13 @@ This repository contains the work product produced by each phase of our analysis
 
 #### Index ####
 
+0_data_files/
+
+  * 6ID0_icn3d.pdb         original PDB file containing PRPF17/CDC40 in complex  
+  * 6ID0.PRPF17.pdb        data pertaining only to PRPF17's protein structure, amino acids 70-578 
+  * NM_015891.3.fasta      mRNA sequence of PRPF17/CDC40  
+  * NP_056975.1.fasta      protein sequence of PRPF17/CDC40  
+
 1_protein_domain_prediction/
 
   * TriPepSVM/              output produced by the TriPepSVM RNA binding domain prediction utility  

@@ -9,12 +9,7 @@ This repository contains the work product produced by each phase of our analysis
 1_protein_domain_prediction/
 
   * TriPepSVM/              output produced by the TriPepSVM RNA binding domain prediction utility  
-  * arpeggio/               output produced by the arpeggio RNA binding domain prediction utility; not used  
-  * beRBP/                  output produced by the beRBP RNA binding domain prediction utility; not used 
   * drna/                   intermediate output produced by the DRNAPred RNA binding domain prediction utility 
-  * hbplus/                 output produced by the hbPlus RNA binding domain prediction utility; not used 
-  * nucplot/                output produced by the nucplot RNA binding domain prediction utility; not used 
-  * plip/                   output produced by the plip RNA binding domain prediction utility; not used 
   * spotseq/                output produced by the SPOT-SEQ-RNA RNA binding domain prediction utility   
   * BP_AARNA4260136W_W.pdf  output produced by the AARNA RNA binding domain prediction utility 
   * CDC40-DRNAPred.txt      final output produced by the DRNAPred RNA binding domain prediction utility 
